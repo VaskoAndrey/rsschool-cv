@@ -58,7 +58,7 @@
    width: 50%;
  }
  
- h1 {
+ h3 {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -215,14 +215,7 @@
    color: rgb(253, 15, 241);
    transition: .4s;
  }
- 
- 
- 
- 
- 
- 
- 
- 
+  
  @media (max-width: 768px) {
    
 .myself {
@@ -232,7 +225,7 @@
 
 .myself-img {
    width: 50%;
-   margin-left: 0 auto;
+   margin-left: 0;
 }
 
 .width {
@@ -244,17 +237,8 @@
 }
 }
 
-@media (max-width: 375px) {
-
-.header,
-.footer {
-   margin-left: 3%;
-}
-
 .about-myself-title-text,
 .code-task,
 .code-description {
    margin-left: 10%;
-}
-
 }
