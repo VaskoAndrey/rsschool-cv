@@ -22,6 +22,7 @@ body {
    margin: 0;
    padding: 0;
    font-family: "Josefin Sans";
+   line-height: 25px;
 }
 
 h2 {
@@ -59,6 +60,7 @@ li {
 }
 
 h1 {
+   position: absolute;
    visibility: hidden;
 }
 
@@ -142,7 +144,6 @@ h3 {
    color: rgb(253, 15, 241);
 }
 
-h1,
 .section-title {
    letter-spacing: 5px;
    color: #075507;
@@ -169,7 +170,7 @@ h1,
 }
 
 .tasks-list li {
-   margin-bottom: 10px;
+   margin-bottom: 5px;
 }
 
 .tasks-list li :hover {
@@ -226,6 +227,19 @@ h1,
    transition: 0.4s;
 }
 
+.tasks-list {
+   margin-left: 30px;
+}
+
+.tasks-list li ::before {
+   content: url(./assets/svg/icons8-ок.svg);
+   display: block;
+   width: 4px;
+   height: 4px;
+   margin-left: -35px;
+   margin-bottom: 5px;
+}
+
 @media (max-width: 768px) {
    .myself {
       display: flex;
@@ -248,7 +262,7 @@ h1,
    .about-myself-title-text,
    .code-task,
    .code-description {
-      margin-left: 10%;
+      margin-left: 7%;
    }
 
    .code-example {
