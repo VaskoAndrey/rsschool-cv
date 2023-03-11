@@ -3,3 +3,269 @@
    src: url("./assets/fonts/JosefinSans-Light.ttf");
    font-weight: 200;
 }
+
+@font-face {
+   font-family: "Josefin Sans";
+   src: url("./assets/fonts/JosefinSans-Regular.ttf");
+   font-weight: 300;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   min-height: 100vh;
+   margin: 0;
+   padding: 0;
+   font-family: "Josefin Sans";
+   line-height: 25px;
+}
+
+h2 {
+   margin-left: 30px;
+}
+
+.header {
+   display: flex;
+}
+
+.main {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #bdf1bd;
+}
+
+li {
+   list-style: none;
+}
+
+.container {
+   width: 99.6%;
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
+.width {
+   width: 50%;
+}
+
+h1 {
+   position: absolute;
+   visibility: hidden;
+}
+
+h3 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 30px;
+   margin: 15px 0;
+   color: #075507;
+}
+
+.myself {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.myself-img {
+   width: 50%;
+   margin-left: 20%;
+   border-radius: 50%;
+   margin-top: 15px;
+}
+
+.contacts-img {
+   margin-right: 7px;
+   width: 20px;
+   height: 20px;
+}
+
+.contacts-title {
+   text-align: start;
+   padding-left: 12%;
+   color: #075507;
+}
+
+.contacts-list {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.contacts-text {
+   border-bottom: 1px solid #bdf1bd;
+}
+
+.contacts-text a {
+   text-decoration: none;
+   color: black;
+}
+
+.nav {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.nav-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   list-style: none;
+   background: #bdf1bd;
+   padding: 15px;
+   margin: 0;
+}
+
+.nav-link {
+   text-decoration: none;
+   transition: 0.4s;
+   color: #075507;
+   line-height: 30px;
+}
+
+.nav-item a:hover,
+.contacts-text a:hover {
+   color: rgb(253, 15, 241);
+}
+
+.section-title {
+   letter-spacing: 5px;
+   color: #075507;
+}
+
+.contacts-list {
+   list-style-type: none;
+}
+
+.contacts {
+   margin-left: 5%;
+}
+
+.code {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+.tasks-list a {
+   text-decoration: none;
+   color: black;
+}
+
+.tasks-list li {
+   margin-bottom: 5px;
+}
+
+.tasks-list li :hover {
+   background-color: #bdf1bd;
+   padding: 5px;
+   border-radius: 20px;
+   color: rgb(253, 15, 241);
+   transition: 0.4s;
+}
+
+.footer {
+   display: flex;
+   justify-content: space-around;
+}
+
+.personal-information,
+.languages,
+.publications,
+.skills,
+.education,
+.experience,
+.about-myself,
+.tasks {
+   border-bottom: 2px solid #bdf1bd;
+}
+
+.about-myself-title-text {
+   margin-left: 6.4%;
+}
+
+.code-task,
+.code-description {
+   margin-left: 3.3%;
+}
+
+.rs-logo {
+   width: 80px;
+}
+
+.rsscool-link a :hover {
+   width: 100px;
+   transition: 0.5s ease-in-out 0.5s;
+}
+
+.year,
+.github-link {
+   font-size: 18px;
+   text-decoration: none;
+   color: #075507;
+}
+
+.git-link a:hover {
+   color: rgb(253, 15, 241);
+   transition: 0.4s;
+}
+
+.tasks-list {
+   margin-left: 30px;
+}
+
+.tasks-list li ::before {
+   content: url(./assets/svg/icons8-ок.svg);
+   display: block;
+   width: 4px;
+   height: 4px;
+   margin-left: -35px;
+   margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+   .myself {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .myself-img {
+      width: 50%;
+      margin-left: 0 auto;
+   }
+
+   .width {
+      width: 100%;
+   }
+
+   .code {
+      display: block;
+   }
+
+   .about-myself-title-text,
+   .code-task,
+   .code-description {
+      margin-left: 7%;
+   }
+
+   .code-example {
+      margin-left: -70px;
+   }
+}
